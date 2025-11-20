@@ -1,0 +1,15 @@
+-name:dev-workflow
+on:workflow-dispatch
+jobs:
+-name:ahha
+steps:
+- uses: actions/checkout@v5
+-name:create a commands
+run: cat devops.txt
+steps:
+-name:creating a command
+RUN:|
+pwd
+ls -lrth
+
+
