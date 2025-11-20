@@ -3,5 +3,9 @@ on:workflow-dispatch:
 jobs:
 -name:stage:
 steps:
-run:hellowork
+-name:create a hyd
+run:hys
+steps:
+-name:create varanasi
+run:varanasi
 
