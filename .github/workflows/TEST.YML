@@ -5,6 +5,7 @@ _ uses: actions/checkout@v5
 
 -mame:build-stage
 steps:
+runs-on:ubuntu-latest
 -name:create the file
 RUN:echo "hello baby"
 RUN:devops.txt
