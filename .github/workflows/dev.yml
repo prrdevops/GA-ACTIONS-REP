@@ -3,6 +3,7 @@
 on:workflow-dispatch
 jobs:
 -name:ahha
+runs-on:ubuntu-latest
 steps:
 - uses: actions/checkout@v5
 -name:create a commands
