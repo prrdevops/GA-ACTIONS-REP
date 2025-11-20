@@ -1,5 +1,6 @@
 -name:dev-workflow
-workflow-dispatch
+
+on:workflow-dispatch
 jobs:
 -name:ahha
 steps:
@@ -11,5 +12,6 @@ steps:
 RUN:|
 pwd
 ls -lrth
-
+wc
+chmod +x
 
