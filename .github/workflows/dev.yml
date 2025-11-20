@@ -1,5 +1,5 @@
 -name:dev-workflow
-on:workflow-dispatch
+workflow-dispatch
 jobs:
 -name:ahha
 steps:
