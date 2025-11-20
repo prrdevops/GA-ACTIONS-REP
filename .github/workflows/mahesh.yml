@@ -1,0 +1,7 @@
+-name:mahi-workflow:
+on:workflow-dispatch:
+jobs:
+-name:stage:
+steps:
+run:hellowork
+
