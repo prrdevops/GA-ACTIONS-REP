@@ -1,11 +1,13 @@
 -name:workflow-system
 on:push
 jobs1 :
+ uses: actions/checkout@v5
+
 -mame:build-stage
 steps:
 -name:create the file
 RUN:echo "hello baby"
-
+RUN:devops.txt
 jobs2:
 needs-on:build-stage
 -name:run-stage
