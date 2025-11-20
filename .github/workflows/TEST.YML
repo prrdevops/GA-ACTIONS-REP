@@ -1,5 +1,5 @@
 -name:workflow-system
-on:push
+on:workflow_dispatch
 jobs1 :
  uses: actions/checkout@v5
 
