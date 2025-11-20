@@ -1,12 +1,13 @@
 -name:workflow-system
 on:push
-jobs :
+jobs1 :
 -mame:build-stage
 steps:
 -name:create the file
 RUN:echo "hello baby"
 
-jobs:
+jobs2:
+needs-on:build-stage
 -name:run-stage
 steps:
 RUN:echo "rajareddy"
