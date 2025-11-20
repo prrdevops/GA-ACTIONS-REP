@@ -14,3 +14,4 @@ needs-on:build-stage
 -name:run-stage
 steps:
 RUN:echo "rajareddy"
+run:./java.txt
