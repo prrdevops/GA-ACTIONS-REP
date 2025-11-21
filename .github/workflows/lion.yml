@@ -1,0 +1,27 @@
+name:declare vais
+on:workflow_dispatch:
+env:
+country:india
+religion:hindu
+language:telugu
+jobs:
+    job A:
+    runs-on:ubuntu-latest
+    steps1:
+      run:|
+      echo"country is "$country
+ jobs:
+      job b:
+      runs-on:ubuntu-latest
+    steps1:
+      run:|
+      echo"religion is" $religion
+   
+ jobs:
+      job c:
+      runs-on:ubuntu-latest
+    steps1:
+      run:|
+      echo"language is" $language  
+      
+
