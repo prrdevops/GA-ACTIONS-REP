@@ -11,6 +11,15 @@ jobs:
               run: echo "hello dschl"
         
             - name: display the date
-              run: date   
+              run: date 
    
-       
+       jobs:
+    rajasheker:
+        runs-on: ubuntu-latest
+          
+        steps:
+            - name: hello display
+              run: echo "hello hyderabad"
+        
+            - name: display the date
+              run: pwd
