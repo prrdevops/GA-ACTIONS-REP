@@ -1,6 +1,7 @@
 name: testind flow
 
 on: push
+branche: hotfix
    
 jobs:
     sampath:
