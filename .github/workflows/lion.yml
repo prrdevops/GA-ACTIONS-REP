@@ -4,6 +4,7 @@ env:
 country:india
 religion:hindu
 language:telugu
+village:dschl
 jobs:
     job A:
     runs-on:ubuntu-latest
@@ -25,3 +26,10 @@ jobs:
       echo"language is" $language  
       
 
+jobs:
+      job d:
+      runs-on:ubuntu-latest
+    steps1:
+      run:|
+      echo"villagee is" $village
+      
