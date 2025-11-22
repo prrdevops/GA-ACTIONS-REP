@@ -6,8 +6,11 @@ jobs:
      steps:
        -name:show repository variables
          run:echo"company is ${{vars.company}}"
-       -name:use secret key
-         env:
-          key:${{secret.ap_key}}
-          run:| echo"secret key"
-                echo"$key"
+         -name:secret repository
+           env:
+           rrr:{{secret.api_key}}
+           run:"secret is":$rre
+          -name:secret repository
+           env:
+           aaa:{{secret.password}}
+           run:"secret is":$aaa
