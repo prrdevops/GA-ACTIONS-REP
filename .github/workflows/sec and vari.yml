@@ -1,0 +1,13 @@
+name: repovars and secret
+on: workflow_dispatch
+jobs:
+   demo:
+     runs_on: ubuntu_latest
+     steps:
+       -name:show repository variables
+         run:echo"company is ${{vars.company}}"
+       -name:use secret key
+         env:
+          key:${{secret.ap_key}}
+          run:| echo"secret key"
+                echo"$key"
