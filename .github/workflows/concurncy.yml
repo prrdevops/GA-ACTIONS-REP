@@ -4,7 +4,7 @@ on:
          branches: [main]
      concurncy:
               groups:group_name
-              cancel_in_progress:true:
+              cancel-in-progress: true
               jobs:
                    build:
                       runs-on:ubuntu_latest
