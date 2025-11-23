@@ -1,6 +1,7 @@
 name: concurncy flow
 on:
-     workflow_dispatch:
+     push:
+         branches: [main]
      concurncy:
               groups:group_name
               cancel_in_progress:true:
