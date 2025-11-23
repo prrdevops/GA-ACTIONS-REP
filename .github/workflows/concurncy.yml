@@ -1,0 +1,30 @@
+name: concurncy flow
+on:
+     workflow_dispatch:
+     concurncy:
+              groups:group_name
+              cancel_in_progress:true:
+              jobs:
+                   build:
+                      runs-on:ubuntu_latest
+                      steps:
+                      name:create a concurncy
+                      run:|
+                          echo"hello world:
+    
+   name: Build
+
+on:
+  push:
+    branches: [ main ]
+
+concurrency:
+  group: build-main
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "Running build..."
