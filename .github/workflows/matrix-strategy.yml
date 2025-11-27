@@ -3,11 +3,24 @@ on:
     push
     jobs:
        build:
-       runs-on: ${{matrix.os}}
+        runs-on: ${{matrix.os}}
        statregy:
              matrix:
              os: [ubuntu-latest,windows-latest,macos-latest]
              nodes:[16 31 41 23]
+             
+             steps:
+                name:matrix create
+                run|
+                  echo:"hello sam:${{matrix.os}}
+        jobs:
+       deploy:
+       needs:build
+        runs-on: ${{matrix.os}}
+       statregy:
+             matrix:
+             os: [ubuntu-latest,windows-latest,macos-latest]
+             nodes:[10,34]
              
              steps:
                 name:matrix create
