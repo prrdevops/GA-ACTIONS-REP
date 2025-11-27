@@ -1,0 +1,31 @@
+name: matrix and strategy
+
+on:
+  push:
+
+jobs:
+  uuuu:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        nodes: [16, 31, 32]
+        exclude:
+          - os: windows-latest
+            nodes: 32
+
+    steps:
+      - name: matrix create
+        run: echo "hello sam: ${{ matrix.os }}"
+
+  deploy:
+    needs: uuuu
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        nodes: [10, 34]
+
+    steps:
+      - name: matrix create
+        run: echo "hello sam: ${{ matrix.os }}"
